@@ -232,7 +232,6 @@ header {
 
 .btn-outline:hover { background: rgba(123,45,59,0.06); }
 
-/* Hero visual */
 .hero-visual { display: flex; justify-content: center; }
 
 .book-stack { position: relative; width: 300px; height: 400px; }
@@ -563,6 +562,32 @@ header {
 .cta-strip .btn { background: var(--gold); color: var(--ink); }
 .cta-strip .btn:hover { background: #d9b055; }
 
+.cta-contact-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+  position: relative;
+}
+
+.cta-contact-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.92rem;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.08);
+  transition: all 0.2s;
+}
+
+.cta-contact-list a:hover {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+
 /* ============ FOOTER ============ */
 footer {
   background: #2b1d1a;
@@ -590,17 +615,22 @@ footer {
 .socials { display: flex; gap: 12px; }
 
 .socials a {
-  width: 40px; height: 40px;
+  width: 42px; height: 42px;
   background: rgba(255,255,255,0.08);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-size: 1.05rem;
   transition: all 0.2s;
 }
 
 .socials a:hover { background: var(--gold); color: var(--ink); transform: translateY(-3px); }
+
+.socials a.fb:hover { background: #1877f2; color: #fff; }
+.socials a.ig:hover { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); color: #fff; }
+.socials a.mail:hover { background: #ea4335; color: #fff; }
 
 .footer-col h4 {
   color: #fff;
@@ -609,9 +639,20 @@ footer {
   margin-bottom: 18px;
 }
 
-.footer-col ul li { margin-bottom: 10px; }
-.footer-col ul a { transition: color 0.2s; font-size: 0.93rem; }
+.footer-col ul li { margin-bottom: 12px; }
+
+.footer-col ul a {
+  transition: color 0.2s;
+  font-size: 0.93rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  word-break: break-all;
+}
+
 .footer-col ul a:hover { color: var(--gold); }
+
+.footer-col ul a i { width: 18px; text-align: center; flex-shrink: 0; }
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
@@ -697,7 +738,6 @@ footer {
       </div>
     </div>
 
-    <!-- NAVIGATION — নাম আপডেটেড -->
     <nav class="header-nav">
       <a href="#" class="active" data-lang="bn">🏠 হোম</a>
       <a href="#" class="active" data-lang="en">🏠 Home</a>
@@ -982,7 +1022,7 @@ footer {
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
+<!-- ============ CTA / CONTACT ============ -->
 <section class="section" id="contact">
   <div class="container">
     <div class="cta-strip">
@@ -992,11 +1032,25 @@ footer {
       <p data-lang="bn">কোনো লেখা আপনার মন ছুঁয়ে গেলে জানান। আপনার প্রতিটি কথা আমার কাছে গুরুত্বপূর্ণ।</p>
       <p data-lang="en">If any writing touched your heart, let me know. Every word from you matters.</p>
 
-      <a href="mailto:hello@example.com" class="btn">
+      <a href="mailto:mstrajiasultanatumpa@gmail.com" class="btn">
         <i class="fas fa-envelope"></i>
-        <span data-lang="bn">Rajia কে লিখুন</span>
-        <span data-lang="en">Write to Rajia</span>
+        <span data-lang="bn">Rajia কে ইমেইল করুন</span>
+        <span data-lang="en">Email Rajia</span>
       </a>
+
+      <!-- QUICK CONTACT LINKS -->
+      <div class="cta-contact-list">
+        <a href="https://www.facebook.com/share/183F8J3kzu/" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-f"></i>
+          <span data-lang="bn">ফেসবুক পেজ</span>
+          <span data-lang="en">Facebook Page</span>
+        </a>
+        <a href="https://www.instagram.com/sani.al.isnine?stkn=MTF5b2w2anMxY3NlZg==" target="_blank" rel="noopener">
+          <i class="fab fa-instagram"></i>
+          <span data-lang="bn">ইনস্টাগ্রাম</span>
+          <span data-lang="en">Instagram</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -1015,10 +1069,15 @@ footer {
         <p data-lang="en">A home for short stories, captions, and emotions written by Rajia Sultana from the depths of the heart.</p>
 
         <div class="socials">
-          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.facebook.com/share/183F8J3kzu/" target="_blank" rel="noopener" class="fb" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/sani.al.isnine?stkn=MTF5b2w2anMxY3NlZg==" target="_blank" rel="noopener" class="ig" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="mailto:mstrajiasultanatumpa@gmail.com" class="mail" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
         </div>
       </div>
 
@@ -1036,9 +1095,21 @@ footer {
         <h4 data-lang="bn">যোগাযোগ</h4>
         <h4 data-lang="en">Get in touch</h4>
         <ul>
-          <li><a href="mailto:hello@example.com"><i class="fas fa-envelope"></i> hello@example.com</a></li>
-          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li>
+            <a href="mailto:mstrajiasultanatumpa@gmail.com">
+              <i class="fas fa-envelope"></i> mstrajiasultanatumpa@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/share/183F8J3kzu/" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i> Facebook Page
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sani.al.isnine?stkn=MTF5b2w2anMxY3NlZg==" target="_blank" rel="noopener">
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -1131,4 +1202,4 @@ backTop.addEventListener('click', () => {
 </script>
 
 </body>
-</html>
+</html>here
