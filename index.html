@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>অন্তর্জগৎ · Antorjogot</title>
+<title>অন্তর্জগৎ · Rajia Sultana</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +51,6 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 
 .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
 
-/* Language toggle */
 .lang-en [data-lang="bn"] { display: none !important; }
 .lang-bn [data-lang="en"] { display: none !important; }
 
@@ -84,7 +83,6 @@ header {
 
 .logo i { color: var(--gold); font-size: 1.3rem; }
 
-/* Search bar - prominent */
 .search-wrap {
   flex: 1;
   max-width: 420px;
@@ -140,7 +138,6 @@ header {
 
 .lang-switch button.active { background: var(--maroon); color: #fff; }
 
-/* Main nav */
 .header-nav {
   display: flex;
   align-items: center;
@@ -161,7 +158,6 @@ header {
 }
 
 .header-nav a:hover { background: rgba(123,45,59,0.08); color: var(--maroon); }
-
 .header-nav a.active { background: var(--maroon); color: #fff; }
 
 /* ============ HERO ============ */
@@ -197,10 +193,7 @@ header {
   letter-spacing: -0.5px;
 }
 
-.hero h1 .accent {
-  color: var(--maroon);
-  font-style: italic;
-}
+.hero h1 .accent { color: var(--maroon); font-style: italic; }
 
 .hero p.lead {
   font-size: 1.12rem;
@@ -229,10 +222,7 @@ header {
   box-shadow: 0 8px 20px rgba(123,45,59,0.25);
 }
 
-.btn-primary:hover {
-  background: var(--maroon-deep);
-  transform: translateY(-2px);
-}
+.btn-primary:hover { background: var(--maroon-deep); transform: translateY(-2px); }
 
 .btn-outline {
   background: transparent;
@@ -280,6 +270,14 @@ header {
   margin-bottom: 12px;
 }
 
+.book-author {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
 .book-divider { width: 40px; height: 2px; background: var(--gold); margin: 16px auto; }
 
 .book-sub { font-size: 0.82rem; color: var(--ink-soft); font-style: italic; }
@@ -315,7 +313,7 @@ header {
   margin: 0 auto;
 }
 
-/* ============ FILTER CHIPS ============ */
+/* ============ FILTER ============ */
 .filter-bar {
   display: flex;
   gap: 10px;
@@ -336,12 +334,7 @@ header {
 }
 
 .chip:hover { border-color: var(--maroon); color: var(--maroon); }
-
-.chip.active {
-  background: var(--maroon);
-  color: #fff;
-  border-color: var(--maroon);
-}
+.chip.active { background: var(--maroon); color: #fff; border-color: var(--maroon); }
 
 /* ============ WRITING CARDS ============ */
 .writings-grid {
@@ -360,7 +353,6 @@ header {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  position: relative;
 }
 
 .writing-card:hover {
@@ -371,11 +363,7 @@ header {
 
 .writing-card.hidden { display: none; }
 
-.writing-visual {
-  height: 180px;
-  position: relative;
-  overflow: hidden;
-}
+.writing-visual { height: 180px; position: relative; overflow: hidden; }
 
 .placeholder-img {
   position: absolute; inset: 0;
@@ -412,7 +400,6 @@ header {
   padding: 4px 12px;
   border-radius: 20px;
   z-index: 2;
-  letter-spacing: 0.3px;
 }
 
 .writing-body {
@@ -468,7 +455,6 @@ header {
 
 .writing-card:hover .read-link { gap: 10px; }
 
-/* No results */
 .no-results {
   text-align: center;
   padding: 60px 20px;
@@ -477,7 +463,6 @@ header {
 }
 
 .no-results.show { display: block; }
-
 .no-results i { font-size: 3rem; color: var(--gold-soft); margin-bottom: 16px; }
 
 .no-results h3 {
@@ -529,6 +514,16 @@ header {
   margin-bottom: 18px;
 }
 
+.about-text .author-name-en {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--gold);
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 18px;
+}
+
 .about-text p {
   color: var(--ink-soft);
   font-size: 1.02rem;
@@ -551,8 +546,6 @@ header {
   text-align: center;
   color: #fff;
   box-shadow: var(--shadow-md);
-  position: relative;
-  overflow: hidden;
 }
 
 .cta-strip h2 {
@@ -568,7 +561,6 @@ header {
 }
 
 .cta-strip .btn { background: var(--gold); color: var(--ink); }
-
 .cta-strip .btn:hover { background: #d9b055; }
 
 /* ============ FOOTER ============ */
@@ -618,7 +610,6 @@ footer {
 }
 
 .footer-col ul li { margin-bottom: 10px; }
-
 .footer-col ul a { transition: color 0.2s; font-size: 0.93rem; }
 .footer-col ul a:hover { color: var(--gold); }
 
@@ -631,7 +622,6 @@ footer {
 
 .footer-bottom i { color: var(--rose); }
 
-/* ============ BACK TO TOP ============ */
 #backTop {
   position: fixed;
   bottom: 28px;
@@ -653,7 +643,6 @@ footer {
 }
 
 #backTop.show { opacity: 1; visibility: visible; }
-
 #backTop:hover { background: var(--maroon-deep); transform: translateY(-4px); }
 
 /* ============ RESPONSIVE ============ */
@@ -696,7 +685,6 @@ footer {
         <span data-lang="en">Antorjogot</span>
       </a>
 
-      <!-- SEARCH BAR -->
       <div class="search-wrap">
         <i class="fas fa-search"></i>
         <input type="text" class="search-input" id="searchInput"
@@ -709,7 +697,7 @@ footer {
       </div>
     </div>
 
-    <!-- NAVIGATION -->
+    <!-- NAVIGATION — নাম আপডেটেড -->
     <nav class="header-nav">
       <a href="#" class="active" data-lang="bn">🏠 হোম</a>
       <a href="#" class="active" data-lang="en">🏠 Home</a>
@@ -717,8 +705,8 @@ footer {
       <a href="#writings" data-lang="bn">📖 সব লেখা</a>
       <a href="#writings" data-lang="en">📖 All Writings</a>
 
-      <a href="#about" data-lang="bn">✍️ লেখক</a>
-      <a href="#about" data-lang="en">✍️ Author</a>
+      <a href="#about" data-lang="bn">✍️ Rajia Sultana</a>
+      <a href="#about" data-lang="en">✍️ Rajia Sultana</a>
 
       <a href="#contact" data-lang="bn">💌 যোগাযোগ</a>
       <a href="#contact" data-lang="en">💌 Contact</a>
@@ -732,8 +720,8 @@ footer {
     <div class="hero-content">
       <span class="hero-badge">
         <i class="fas fa-heart"></i>
-        <span data-lang="bn">হৃদয় থেকে লেখা, হৃদয়ে পৌঁছাতে</span>
-        <span data-lang="en">Written from the heart, to reach yours</span>
+        <span data-lang="bn">Rajia Sultana · হৃদয় থেকে লেখা</span>
+        <span data-lang="en">Rajia Sultana · Written from the heart</span>
       </span>
 
       <h1 data-lang="bn">
@@ -760,8 +748,8 @@ footer {
         </a>
         <a href="#about" class="btn btn-outline">
           <i class="fas fa-user-pen"></i>
-          <span data-lang="bn">লেখক সম্পর্কে</span>
-          <span data-lang="en">About the author</span>
+          <span data-lang="bn">Rajia সম্পর্কে</span>
+          <span data-lang="en">About Rajia</span>
         </a>
       </div>
     </div>
@@ -773,6 +761,7 @@ footer {
         <div class="book book-3">
           <div class="book-title" data-lang="bn">অন্তর্জগৎ</div>
           <div class="book-title" data-lang="en" style="font-family:'Playfair Display',serif; font-style:italic;">Antorjogot</div>
+          <div class="book-author">Rajia Sultana</div>
           <div class="book-divider"></div>
           <div class="book-sub" data-lang="bn">একটি ডায়েরির গল্প</div>
           <div class="book-sub" data-lang="en">A diary's tale</div>
@@ -796,7 +785,6 @@ footer {
       <p data-lang="en">Each piece is arranged in small units. Pick a category or search.</p>
     </div>
 
-    <!-- CATEGORY FILTERS -->
     <div class="filter-bar" id="filterBar">
       <button class="chip active" data-filter="all" data-lang="bn">সব</button>
       <button class="chip active" data-filter="all" data-lang="en">All</button>
@@ -814,10 +802,8 @@ footer {
       <button class="chip" data-filter="memory" data-lang="en">Memory</button>
     </div>
 
-    <!-- GRID -->
     <div class="writings-grid" id="writingsGrid">
 
-      <!-- Card 1 -->
       <article class="writing-card" data-category="love"
                data-search-bn="প্রথম দেখা love ভালোবাসা চোখ" data-search-en="first meeting love eyes">
         <div class="writing-visual">
@@ -842,7 +828,6 @@ footer {
         </div>
       </article>
 
-      <!-- Card 2 -->
       <article class="writing-card" data-category="longing"
                data-search-bn="বৃষ্টিভেজা সন্ধ্যা বিরহ বৃষ্টি" data-search-en="rain evening longing">
         <div class="writing-visual">
@@ -867,7 +852,6 @@ footer {
         </div>
       </article>
 
-      <!-- Card 3 -->
       <article class="writing-card" data-category="memory"
                data-search-bn="চিঠি পাঠাইনি স্মৃতি" data-search-en="letter unsent memory">
         <div class="writing-visual">
@@ -890,4 +874,261 @@ footer {
             </a>
           </div>
         </div>
-      </article
+      </article>
+
+      <article class="writing-card" data-category="longing"
+               data-search-bn="শেষ দেখা বিদায় বিরহ" data-search-en="last goodbye farewell">
+        <div class="writing-visual">
+          <div class="placeholder-img" style="background: linear-gradient(135deg, #b76e79, #4a1f28);"></div>
+          <span class="unit-label" data-lang="bn">ইউনিট ০৪</span>
+          <span class="unit-label" data-lang="en">Unit 04</span>
+          <span class="category-tag" data-lang="bn">বিরহ</span>
+          <span class="category-tag" data-lang="en">Longing</span>
+        </div>
+        <div class="writing-body">
+          <h3 data-lang="bn">শেষ দেখা</h3>
+          <h3 data-lang="en">The Last Goodbye</h3>
+          <p data-lang="bn">বিদায়ের সময় কেউ কিছু বলে না, শুধু চোখ দুটো সব বলে দেয়। ভালোবাসা মানে ছেড়ে দেয়াও।</p>
+          <p data-lang="en">At goodbye, no one says anything — only the eyes speak. Love can also mean letting go.</p>
+          <div class="writing-footer">
+            <span class="date"><i class="far fa-calendar"></i> 19 আগস্ট ২০২৫</span>
+            <a href="#" class="read-link">
+              <span data-lang="bn">পড়ুন</span><span data-lang="en">Read</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="writing-card" data-category="love"
+               data-search-bn="তোমার নাম ভালোবাসা প্রার্থনা" data-search-en="your name love prayer">
+        <div class="writing-visual">
+          <div class="placeholder-img" style="background: linear-gradient(135deg, #c9a24a, #7b2d3b);"></div>
+          <span class="unit-label" data-lang="bn">ইউনিট ০৫</span>
+          <span class="unit-label" data-lang="en">Unit 05</span>
+          <span class="category-tag" data-lang="bn">ভালোবাসা</span>
+          <span class="category-tag" data-lang="en">Love</span>
+        </div>
+        <div class="writing-body">
+          <h3 data-lang="bn">তোমার নাম</h3>
+          <h3 data-lang="en">Your Name</h3>
+          <p data-lang="bn">তোমার নামটা আমার কাছে একটা প্রার্থনার মতো। প্রতিবার উচ্চারণ করলে মনে হয় পৃথিবীটা একটু থেমে যায়।</p>
+          <p data-lang="en">Your name is like a prayer to me. Every time I say it, the world seems to pause.</p>
+          <div class="writing-footer">
+            <span class="date"><i class="far fa-calendar"></i> 02 সেপ্টেম্বর ২০২৫</span>
+            <a href="#" class="read-link">
+              <span data-lang="bn">পড়ুন</span><span data-lang="en">Read</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="writing-card" data-category="hope"
+               data-search-bn="নীরবতা আশা অনুভূতি" data-search-en="silence hope feeling">
+        <div class="writing-visual">
+          <div class="placeholder-img" style="background: linear-gradient(135deg, #8a6a1e, #2b1d1a);"></div>
+          <span class="unit-label" data-lang="bn">ইউনিট ০৬</span>
+          <span class="unit-label" data-lang="en">Unit 06</span>
+          <span class="category-tag" data-lang="bn">আশা</span>
+          <span class="category-tag" data-lang="en">Hope</span>
+        </div>
+        <div class="writing-body">
+          <h3 data-lang="bn">নীরবতা</h3>
+          <h3 data-lang="en">Silence</h3>
+          <p data-lang="bn">কিছু কথা বলা যায় না, শুধু অনুভব করা যায়। নীরবতাও এক ধরনের ভাষা — যদি কেউ বুঝতে পারে।</p>
+          <p data-lang="en">Some things cannot be said — only felt. Silence is also a language, if only someone understands.</p>
+          <div class="writing-footer">
+            <span class="date"><i class="far fa-calendar"></i> 10 সেপ্টেম্বর ২০২৫</span>
+            <a href="#" class="read-link">
+              <span data-lang="bn">পড়ুন</span><span data-lang="en">Read</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="no-results" id="noResults">
+      <i class="fas fa-feather"></i>
+      <h3 data-lang="bn">কিছু পাওয়া যায়নি</h3>
+      <h3 data-lang="en">Nothing found</h3>
+      <p data-lang="bn">অন্য কিছু দিয়ে খুঁজে দেখুন।</p>
+      <p data-lang="en">Try searching something else.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="about-wrap">
+      <div class="about-photo"><i class="fas fa-pen-fancy"></i></div>
+      <div class="about-text">
+        <h2 data-lang="bn">Rajia Sultana সম্পর্কে</h2>
+        <h2 data-lang="en">About Rajia Sultana</h2>
+        <span class="author-name-en">Rajia Sultana</span>
+
+        <p data-lang="bn">আমি রাজিয়া সুলতানা, একজন সাধারণ মানুষ — যার সবচেয়ে বড় সম্পদ তার ডায়েরি। ছোটবেলা থেকেই মনের কথা লিখে রাখতাম, কখনো কাগজে, কখনো মোবাইলের নোটে।</p>
+        <p data-lang="en">I am Rajia Sultana, an ordinary person whose greatest treasure is a diary. From a young age, I have written what my heart feels.</p>
+
+        <p data-lang="bn">এই ওয়েবসাইট আমার সেই লেখাগুলোর ঠিকানা। ভালোবাসা, বিরহ, আশা আর অনুভূতির ছোট ছোট টুকরো — যাতে কেউ পড়ে নিজের গল্প খুঁজে পায়।</p>
+        <p data-lang="en">This website is the home of those writings. Fragments of love, longing, hope and emotion — so someone may find their own story.</p>
+
+        <div class="about-signature">— Rajia Sultana</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="cta-strip">
+      <h2 data-lang="bn">আপনার অনুভূতি শেয়ার করুন</h2>
+      <h2 data-lang="en">Share your feelings</h2>
+
+      <p data-lang="bn">কোনো লেখা আপনার মন ছুঁয়ে গেলে জানান। আপনার প্রতিটি কথা আমার কাছে গুরুত্বপূর্ণ।</p>
+      <p data-lang="en">If any writing touched your heart, let me know. Every word from you matters.</p>
+
+      <a href="mailto:hello@example.com" class="btn">
+        <i class="fas fa-envelope"></i>
+        <span data-lang="bn">Rajia কে লিখুন</span>
+        <span data-lang="en">Write to Rajia</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <i class="fas fa-feather-alt"></i>
+          <span data-lang="bn">অন্তর্জগৎ</span>
+          <span data-lang="en">Antorjogot</span>
+        </a>
+        <p data-lang="bn">Rajia Sultana এর হৃদয়ের গভীর থেকে লেখা ছোট ছোট গল্প, ক্যাপশন আর অনুভূতির ঠিকানা।</p>
+        <p data-lang="en">A home for short stories, captions, and emotions written by Rajia Sultana from the depths of the heart.</p>
+
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-lang="bn">দ্রুত লিংক</h4>
+        <h4 data-lang="en">Quick links</h4>
+        <ul>
+          <li><a href="#writings" data-lang="bn">সব লেখা</a><a href="#writings" data-lang="en">All writings</a></li>
+          <li><a href="#about" data-lang="bn">Rajia Sultana</a><a href="#about" data-lang="en">Rajia Sultana</a></li>
+          <li><a href="#contact" data-lang="bn">যোগাযোগ</a><a href="#contact" data-lang="en">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-lang="bn">যোগাযোগ</h4>
+        <h4 data-lang="en">Get in touch</h4>
+        <ul>
+          <li><a href="mailto:hello@example.com"><i class="fas fa-envelope"></i> hello@example.com</a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        © 2025 <span data-lang="bn">অন্তর্জগৎ</span><span data-lang="en">Antorjogot</span> ·
+        <span data-lang="bn">লিখেছেন <strong>Rajia Sultana</strong></span>
+        <span data-lang="en">Written by <strong>Rajia Sultana</strong></span>
+        <i class="fas fa-heart"></i>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<button id="backTop" aria-label="Back to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script>
+function setLang(lang) {
+  document.body.className = 'lang-' + lang;
+  document.documentElement.lang = lang;
+  document.getElementById('btn-bn').classList.toggle('active', lang === 'bn');
+  document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+  const si = document.getElementById('searchInput');
+  si.placeholder = lang === 'bn' ? si.dataset.phBn : si.dataset.phEn;
+  try { localStorage.setItem('siteLang', lang); } catch(e) {}
+}
+
+const searchInput = document.getElementById('searchInput');
+const cards = document.querySelectorAll('.writing-card');
+const noResults = document.getElementById('noResults');
+const chips = document.querySelectorAll('.chip');
+let currentFilter = 'all';
+
+function applyFilters() {
+  const q = searchInput.value.trim().toLowerCase();
+  const lang = document.body.classList.contains('lang-en') ? 'en' : 'bn';
+  let visibleCount = 0;
+
+  cards.forEach(card => {
+    const cat = card.dataset.category;
+    const searchText = (lang === 'bn' ? card.dataset.searchBn : card.dataset.searchEn) || '';
+    const title = card.querySelector('h3[data-lang="' + lang + '"]')?.textContent.toLowerCase() || '';
+    const body = card.querySelector('p[data-lang="' + lang + '"]')?.textContent.toLowerCase() || '';
+
+    const catMatch = (currentFilter === 'all') || (cat === currentFilter);
+    const searchMatch = q === '' || searchText.includes(q) || title.includes(q) || body.includes(q);
+
+    if (catMatch && searchMatch) {
+      card.classList.remove('hidden');
+      visibleCount++;
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+
+  noResults.classList.toggle('show', visibleCount === 0);
+}
+
+searchInput.addEventListener('input', applyFilters);
+
+chips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    chips.forEach(c => {
+      if (c.dataset.filter === chip.dataset.filter) c.classList.add('active');
+    });
+    currentFilter = chip.dataset.filter;
+    applyFilters();
+  });
+});
+
+const backTop = document.getElementById('backTop');
+window.addEventListener('scroll', () => {
+  backTop.classList.toggle('show', window.scrollY > 400);
+});
+backTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+(function() {
+  try {
+    const saved = localStorage.getItem('siteLang');
+    if (saved === 'en') setLang('en');
+    else setLang('bn');
+  } catch(e) {}
+})();
+</script>
+
+</body>
+</html>
