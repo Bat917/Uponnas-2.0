@@ -362,7 +362,7 @@ header {
 
 .writing-card.hidden { display: none; }
 
-.writing-visual { height: 180px; position: relative; overflow: hidden; }
+.writing-visual { height: 200px; position: relative; overflow: hidden; background: #2b1d1a;}
 
 .placeholder-img {
   position: absolute; inset: 0;
@@ -376,7 +376,7 @@ header {
 .writing-visual::after {
   content: '';
   position: absolute; inset: 0;
-  background: linear-gradient(to top, rgba(43,29,26,0.55), transparent 60%);
+  background: linear-gradient(to top, rgba(43,29,26,0.7), transparent 60%);
 }
 
 .unit-label {
@@ -495,6 +495,14 @@ header {
   color: #fff;
   box-shadow: var(--shadow-md);
   position: relative;
+  overflow: hidden; /* ছবি রাউন্ড করার জন্য */
+}
+
+/* নতুন ছবির স্টাইল */
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about-photo::before {
@@ -504,6 +512,7 @@ header {
   border: 2px dashed var(--gold);
   border-radius: 50%;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .about-text h2 {
@@ -693,7 +702,7 @@ footer {
   .book-stack { width: 240px; height: 320px; }
   .writings-grid { grid-template-columns: repeat(2, 1fr); }
   .about-wrap { grid-template-columns: 1fr; padding: 36px; }
-  .about-photo { max-width: 180px; margin: 0 auto; }
+  .about-photo { max-width: 220px; margin: 0 auto; }
   .search-wrap { max-width: 100%; }
 }
 
@@ -844,10 +853,13 @@ footer {
 
     <div class="writings-grid" id="writingsGrid">
 
+      <!-- কার্ড ১: এখানে আপনার ছবিটি যুক্ত করা হয়েছে -->
       <article class="writing-card" data-category="love"
                data-search-bn="প্রথম দেখা love ভালোবাসা চোখ" data-search-en="first meeting love eyes">
         <div class="writing-visual">
-          <div class="placeholder-img" style="background: linear-gradient(135deg, #d98a94, #7b2d3b);"></div>
+          <!-- নিচের লাইনে ছবির নাম বা লিংক বসবে -->
+          <div class="placeholder-img" style="background-image: url('muktir-dorshon.jpg'); background-size: cover; background-position: center;"></div>
+          
           <span class="unit-label" data-lang="bn">ইউনিট ০১</span>
           <span class="unit-label" data-lang="en">Unit 01</span>
           <span class="category-tag" data-lang="bn">ভালোবাসা</span>
@@ -1004,7 +1016,11 @@ footer {
 <section class="section" id="about">
   <div class="container">
     <div class="about-wrap">
-      <div class="about-photo"><i class="fas fa-pen-fancy"></i></div>
+      <!-- লেখক পরিচিতিতে আপনার ছবিটি যুক্ত করা হয়েছে -->
+      <div class="about-photo">
+        <img src="muktir-dorshon.jpg" alt="Rajia Sultana" style="width: 100%; height: 100%; object-fit: cover;">
+      </div>
+      
       <div class="about-text">
         <h2 data-lang="bn">Rajia Sultana সম্পর্কে</h2>
         <h2 data-lang="en">About Rajia Sultana</h2>
