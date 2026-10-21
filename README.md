@@ -362,7 +362,7 @@ header {
 
 .writing-card.hidden { display: none; }
 
-.writing-visual { height: 200px; position: relative; overflow: hidden; background: #2b1d1a;}
+.writing-visual { height: 240px; position: relative; overflow: hidden; background: #2b1d1a;}
 
 .placeholder-img {
   position: absolute; inset: 0;
@@ -491,14 +491,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 4.5rem;
-  color: #fff;
   box-shadow: var(--shadow-md);
   position: relative;
-  overflow: hidden; /* ছবি রাউন্ড করার জন্য */
+  overflow: hidden; 
 }
 
-/* নতুন ছবির স্টাইল */
 .about-photo img {
   width: 100%;
   height: 100%;
@@ -513,6 +510,7 @@ header {
   border-radius: 50%;
   opacity: 0.5;
   pointer-events: none;
+  z-index: 2;
 }
 
 .about-text h2 {
@@ -853,25 +851,35 @@ footer {
 
     <div class="writings-grid" id="writingsGrid">
 
-      <!-- কার্ড ১: এখানে আপনার ছবিটি যুক্ত করা হয়েছে -->
+      <!-- কার্ড ১: এখানে আপনার ছবির লেখাগুলো বসানো হয়েছে -->
       <article class="writing-card" data-category="love"
-               data-search-bn="প্রথম দেখা love ভালোবাসা চোখ" data-search-en="first meeting love eyes">
+               data-search-bn="মুক্তির দর্শন সীমাবদ্ধতা শিকল মিথ্যা সত্য বন্দিত্ব" data-search-en="philosophy freedom limitation chain lie truth">
         <div class="writing-visual">
-          <!-- নিচের লাইনে ছবির নাম বা লিংক বসবে -->
-          <div class="placeholder-img" style="background-image: url('muktir-dorshon.jpg'); background-size: cover; background-position: center;"></div>
+          <div class="placeholder-img" style="background-image: url('https://i.ibb.co/6c6Zq6K/muktir-dorshon.jpg');"></div>
           
           <span class="unit-label" data-lang="bn">ইউনিট ০১</span>
           <span class="unit-label" data-lang="en">Unit 01</span>
-          <span class="category-tag" data-lang="bn">ভালোবাসা</span>
-          <span class="category-tag" data-lang="en">Love</span>
+          <span class="category-tag" data-lang="bn">দর্শন</span>
+          <span class="category-tag" data-lang="en">Philosophy</span>
         </div>
         <div class="writing-body">
-          <h3 data-lang="bn">প্রথম দেখা</h3>
-          <h3 data-lang="en">The First Meeting</h3>
-          <p data-lang="bn">যেদিন প্রথম দেখা, সেদিন মনে হয়েছিল সময় থেমে গেছে। তোমার চোখে আমি খুঁজে পেয়েছিলাম আমার সব উত্তর।</p>
-          <p data-lang="en">The day we first met, time itself seemed to pause. In your eyes, I found every answer.</p>
+          <h3 data-lang="bn">মুক্তির দর্শন</h3>
+          <h3 data-lang="en">The Philosophy of Freedom</h3>
+          
+          <!-- ছবির ভেতরের উক্তিগুলো এখানে বসানো হলো -->
+          <p data-lang="bn">
+            "সীমাবদ্ধতা কোনো ব্যাপার নয়; মুক্ত হতে চাইলে, শুধু শিকলটা খুলতে হবে।"<br><br>
+            "মিথ্যার জগতে মিথ্যাকে মেনে নেওয়া যায়, কিন্তু সত্যের জগতে মিথ্যাকে মেনে নেওয়া যায় না।"<br><br>
+            "ঠিক তেমনই, বন্দিত্বের জগতে বন্দি থাকা যায়; কিন্তু মুক্তির জগতে বন্দি থাকা যায় না।"
+          </p>
+          <p data-lang="en">
+            "Limitation is not a matter; to be free, you just need to unlock the chain."<br><br>
+            "In the world of lies, lies are accepted, but in the world of truth, lies are not accepted."<br><br>
+            "Just like that, one can be bound in the world of bondage; but one cannot be bound in the world of freedom."
+          </p>
+
           <div class="writing-footer">
-            <span class="date"><i class="far fa-calendar"></i> 12 মে ২০২৫</span>
+            <span class="date"><i class="fas fa-feather-alt"></i> Rajia</span>
             <a href="#" class="read-link">
               <span data-lang="bn">পড়ুন</span><span data-lang="en">Read</span>
               <i class="fas fa-arrow-right"></i>
@@ -1016,9 +1024,8 @@ footer {
 <section class="section" id="about">
   <div class="container">
     <div class="about-wrap">
-      <!-- লেখক পরিচিতিতে আপনার ছবিটি যুক্ত করা হয়েছে -->
       <div class="about-photo">
-        <img src="muktir-dorshon.jpg" alt="Rajia Sultana" style="width: 100%; height: 100%; object-fit: cover;">
+        <img src="https://i.ibb.co/6c6Zq6K/muktir-dorshon.jpg" alt="Rajia Sultana">
       </div>
       
       <div class="about-text">
